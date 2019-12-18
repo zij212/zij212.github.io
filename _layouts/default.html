@@ -25,5 +25,9 @@
 	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
 				</ul>
 			</footer>
+			{% include analytics.html %}
+			{% if jekyll.environment == 'production' %}
+			{% include analytics.html %}
+			{% endif %}
 		</body>
 	</html>
