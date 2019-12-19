@@ -14,21 +14,25 @@ zij212.github.io:.
 │   index.html
 │   README.md
 │   _config.yml
+|
 ├───about
 │       index.html
+|
 ├───blog
 │       atom.xml
 │       index.html
+|
 ├───css
 │       main.css
-├───cv
-│       index.html
+|
 ├───_includes
 │       analytics.html
 │       disqus.html
+|
 ├───_layouts
 │       default.html
 │       post.html
+|
 └───_posts
         2019-12-18-hello-world.md
 ```
