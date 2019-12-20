@@ -44,3 +44,12 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+img {
+  vertical-align: middle;
+}
+
+
+.img-circle {
+  border-radius: 50%;
+}
