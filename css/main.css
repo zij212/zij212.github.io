@@ -48,3 +48,5 @@ ul.posts li {
 img {
   vertical-align: middle;
 }
+.marketing p { line-height: 25px; }
+.marketing p.lead { line-height: 30px; }
