@@ -54,7 +54,7 @@ if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0', port=9080)
 ```
 
-To run it, run command
+Command to run the app:
 
 ```shell
 python on_off.py
@@ -101,7 +101,7 @@ If this (google assistant) then that (webhook)
 
 ## Video
 
-Now that we have everything up and running, here is me demoing the result.
+Now that we have everything up and running, here is me demoing the result. The LED is in the center of the progress bar. I will work on my camerawoman-ship next time.
 
 [![demo_video]({{site.url}}/img/led_youtube_thumbnail.JPG)](https://www.youtube.com/watch?v=ZRuIQGlsi-U)
 
