@@ -87,7 +87,7 @@ Here are the steps to set it up:
     ```
     ![ngrok_http.png]({{site.url}}/img/ngrok_http.png) 
 
-And voila! Now I can turn on the LED by visiting https://64b88309.ngrok.io/on and then turn it off using https://64b88309.ngrok.io/off. 
+And voila! Now I can turn on the LED by visiting [https://64b88309.ngrok.io/on](https://64b88309.ngrok.io/on) and then turn it off using [https://64b88309.ngrok.io/off](https://64b88309.ngrok.io/off). 
 
 
 ## IFTTT
