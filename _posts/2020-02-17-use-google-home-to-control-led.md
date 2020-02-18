@@ -60,11 +60,9 @@ To run it, run command
 python on_off.py
 ```
 
-Here is the map of the GPIO pins in case you want to use other pins 
-https://www.raspberrypi.org/documentation/usage/gpio/
+Here is the [map](https://www.raspberrypi.org/documentation/usage/gpio/) of the GPIO pins in case you want to use other pins 
 
-And more details on how to setup GPIO pins  
-https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
+And more [details](https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/) on how to setup GPIO pins  
 
 
 ## ngrok
@@ -112,4 +110,6 @@ Now that we have everything up and running, here is me demoing the result.
 
 From this project I learned about GPIO pins, flask apps, ngrok and IFTTT. I can see myself using these tools again in future projects and maybe even send a few messages in a haunted mansion :wink:  
 
-![led_circuit.svg](https://github.com/zij212/zij212.github.io/blob/master/img/parasite.jpeg) 
+![parasite.jpeg](https://github.com/zij212/zij212.github.io/blob/master/img/parasite.jpeg)   
+
+![parasite.jpeg]({{site.url}}/img/parasite.jpeg) 
