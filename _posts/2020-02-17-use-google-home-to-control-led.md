@@ -20,7 +20,7 @@ My friend [Linlin](https://github.com/fanllzz) got me a Google Home for my birth
 
 Here is what the circuit looks like. 
 
-![led_circuit.svg](https://github.com/zij212/zij212.github.io/blob/master/img/led_circuit.svg) 
+![led_circuit.svg]({{site.url}}/img/led_circuit.svg) 
 
 I should have written down on a sticky note that Anode is the positive and longer leg and Cathode is the negative and shorter leg, because I kept forgetting which is which and googled many times. But I guess as long as I remember it’s one-way and use some resistors to protect it, I will be okay.
 
@@ -85,7 +85,7 @@ Here are the steps to set it up:
     ```sh
     ./ngrok http 9080
     ```
-    ![ngrok_http.png](https://github.com/zij212/zij212.github.io/blob/master/img/ngrok_http.png) 
+    ![ngrok_http.png]({{site.url}}/img/ngrok_http.png) 
 
 And voila! Now I can turn on the LED by visiting https://64b88309.ngrok.io/on and then turn it off using https://64b88309.ngrok.io/off. 
 
@@ -103,13 +103,11 @@ If this (google assistant) then that (webhook)
 
 Now that we have everything up and running, here is me demoing the result.
 
-[![demo_video](https://github.com/zij212/zij212.github.io/blob/master/img/led_youtube_thumbnail.JPG)](https://www.youtube.com/watch?v=ZRuIQGlsi-U)
+[![demo_video]({{site.url}}/img/led_youtube_thumbnail.JPG)](https://www.youtube.com/watch?v=ZRuIQGlsi-U)
 
 
 ## Thoughts
 
 From this project I learned about GPIO pins, flask apps, ngrok and IFTTT. I can see myself using these tools again in future projects and maybe even send a few messages in a haunted mansion :wink:  
-
-![parasite.jpeg](https://github.com/zij212/zij212.github.io/blob/master/img/parasite.jpeg)   
 
 ![parasite.jpeg]({{site.url}}/img/parasite.jpeg) 
