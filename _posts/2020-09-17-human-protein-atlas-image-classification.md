@@ -35,7 +35,7 @@ Now that we have splitted out the training data, let’s calculate the mean and 
 
 The model we are going to use is Resnet34, but here are two small modifications: we need to change the input size of the first convolutional layer to 4, and the output size of the last fully connected layer to 28. The weight of the 4th channel of the 1st convolutional layer is initialized with the average of the pretrained weight of the original 3 channels of the 1st convolutional layer. During the first few epochs, we will freeze all weights of the model, except for the 1st convolutional layer and the output layer. We will then unfreeze all weights and train some more.
 
-Some of the labels in our dataset are extremely rare, for example Rod and rings only make up 0.04% of the data. For an imbalance dataset, it is recommended to use Focal Loss, which multiplies binary cross entropy by $$(1-p)$$ (when $$y=1$$) or $$p$$ (when $$y=0$$)
+Some of the labels in our dataset are extremely rare, for example Rod and rings only make up 0.04% of the data. For an imbalance dataset, it is recommended to use Focal Loss, which multiplies binary cross entropy by $$(1-p)^\gamma$$ (when $$y=1$$) or $$p^\gamma$$ (when $$y=0$$). When $$\gamma=0$$, Focal Loss is the same as binary cross entropy loss, and the larger $$\gamma$$ is, the more weight we give to the False Negatives.
 
 See my implementation at [https://www.kaggle.com/zij212/human-protein-atlas-resnet34-focalloss](https://www.kaggle.com/zij212/human-protein-atlas-resnet34-focalloss)
 
