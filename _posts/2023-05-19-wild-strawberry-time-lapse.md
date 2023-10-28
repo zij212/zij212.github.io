@@ -48,7 +48,7 @@ camera.capture("/home/pi/camera/" + filename + ".jpg")
 
 ## Adding music
 
-Ever watched a movie that sxxk axx but has great soundtrack? To make the timelapse more interesting watch, I used [this uplifting piece](https://uppbeat.io/track/roger-gabalda/a-little-peace) from [uppbeat.io](uppbeat.io) as the background music. The free account allows for 3 downloads per month. 
+Ever watched a movie that sxxk axx but has great soundtrack? To make the timelapse more interesting watch, I used [this uplifting piece](https://uppbeat.io/track/roger-gabalda/a-little-peace) from [uppbeat.io](https://uppbeat.io) as the background music. The free account allows for 3 downloads per month. 
 
 Then I used iMovie to combine everything and export the final video ready for upload!
 
