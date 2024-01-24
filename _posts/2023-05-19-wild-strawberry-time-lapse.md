@@ -1,21 +1,23 @@
 ---
 layout: post
-title: "Time-lapse of Wild Strawberry Plants over 4 Months"
+title: "Timelapse of Wild Strawberry Plants over 4 Months"
 date: 2023-05-19
 ---
 
-I got a smart garden from work last Christmas and I was very excited to try it out. At that point I have a haworthia zebra plant, a begonia maculata, a mango plant, and an avocado plant. I started the last 2 plants from seed, and, no, I don't expect them to bear any fruit. I really wanted to try growing something that I can consume later, so I ordered a packet of wild strawberry pods. I also got a raspberypi camera and made a timelapse video.
+I got a smart garden from work last Christmas and was very excited to try it out. At that point I had a haworthia zebra plant, a begonia maculata, a mango plant, and an avocado plant. I started the last 2 plants from seed. And no, I don't expect them to bear any fruit. 
+
+I really wanted to grow something that I can consume later, so I ordered a packet of wild strawberry pods. I also ordered a raspberrypi camera module and made a timelapse video.
 
 [![demo_video]({{site.url}}/img/wild_strawberry_youtube_thumbnail.png)](https://youtu.be/htmcwLssEDY)
 
-Here's my set up,
-1. write python script to take a picture
-2. schedule python script to run every 30 minutes
-3. wait for 4 months...and make a time lapse using `ffmpeg`!
+Here's my setup,
+1. write a python script to take one picture using the raspberrypi camera
+2. schedule the python script to run every 30 minutes
+3. wait for 4 months...and make a timelapse using `ffmpeg`!
 4. add some music to the video
 
 
-## Code snipet to take 1 picture with raspberipi camera:
+## Code snipet to take 1 picture:
 
 ```py
 #!/home/pi/.pyenv/shims/python3
@@ -34,7 +36,7 @@ filename = datetime.now(pytz.timezone('US/Eastern')).strftime('%Y%m%d%H%M%S')
 camera.capture("/home/pi/camera/" + filename + ".jpg")
 ```
 
-## Crontab entry to execute the python code above every 30 minutes:
+## Crontab entry to execute the python script every 30 minutes:
 
 ```
 # every 30 minutes
@@ -48,11 +50,11 @@ camera.capture("/home/pi/camera/" + filename + ".jpg")
 
 ## Adding music
 
-Ever watched a movie that sxxk axx but has great soundtrack? To make the timelapse more interesting watch, I used [this uplifting piece](https://uppbeat.io/track/roger-gabalda/a-little-peace) from [uppbeat.io](https://uppbeat.io) as the background music. The free account allows for 3 downloads per month. 
+Ever watched a movie that sxxk axx but has great soundtrack? To make the timelapse more interesting to watch, I used [this uplifting piece](https://uppbeat.io/track/roger-gabalda/a-little-peace) from [uppbeat.io](https://uppbeat.io) as the background music. The free tier subscription allows for 3 downloads per month. 
 
 Then I used iMovie to combine everything and export the final video ready for upload!
 
-The resolution of the video is not great, and you can't see the strawberries very clearly. So here's a picture of my last harvest.
+The resolution of the video is not great. And you can't see the strawberries very clearly. So here's a picture of my last harvest.
 
 ![wild_strawberries.jpg]({{site.url}}/img/wild_strawberries.jpg) 
 
